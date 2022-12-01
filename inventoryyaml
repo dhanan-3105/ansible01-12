@@ -1,0 +1,16 @@
+demo.oci.yaml
+
+plugin: oracle.oci.oci
+
+regions:
+ - us-ashburn-1
+
+compartments:
+ - compartment_ocid: "your compartment OCID"
+   fetch_hosts_from_subcompartments: false
+
+ filters:
+ - lifecycle_state: "RUNNING"
+ 
+ - availability_domain:
+   - mwOj:US-ASHBURN-AD-1
